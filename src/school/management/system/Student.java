@@ -55,10 +55,12 @@ public class Student {
      * @param fees is the fees that the student pays.
      */
 
-    public void updateFeesPaid(int fees){
+    public void payFees(int fees){
 
-        feesPaid += fees; // adding fees to the feesPaid
-
+        // adding fees to the feesPaid
+        feesPaid += fees;
+        // the method should be static to be accessed like this
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
     // alt + insert shorter for getter and setters
@@ -105,5 +107,15 @@ public class Student {
 
     public int getFeesTotal() {
         return feesTotal;
+    }
+
+    /**
+     *
+     * @return the remaining fees.
+     */
+
+    public int getRemainingFees() {
+        return feesTotal - feesPaid;
+
     }
 }

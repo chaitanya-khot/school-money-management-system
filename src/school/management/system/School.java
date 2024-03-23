@@ -14,8 +14,9 @@ public class School {
 
     private List<Teacher> teachers;
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    // with static, we can access the method. Otherwise we need an instance of that method
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
     /**
      * created as soon as a new school object is created
@@ -81,7 +82,7 @@ public class School {
      * @param MoneyEarned money that is supposed to be added.
      */
 
-    public void updateTotalMoneyEarned(int MoneyEarned) {
+    public static void updateTotalMoneyEarned(int MoneyEarned) {
         totalMoneyEarned += MoneyEarned;
     }
 
@@ -99,7 +100,7 @@ public class School {
      * @param MoneySpent the money spent by the school.
      */
 
-    public void updateTotalMoneySpent(int MoneySpent) {
+    public static void updateTotalMoneySpent(int MoneySpent) {
         totalMoneyEarned -= MoneySpent;
 
     }

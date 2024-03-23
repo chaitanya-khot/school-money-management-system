@@ -33,7 +33,19 @@ public class Main {
         School Pokemon_Town_School = new School(teacherList, studentList);
         System.out.println("Pokemon Town School has earned " + Pokemon_Town_School.getTotalMoneyEarned() + "$");
 
+        Pikachu.payFees(5000);
+        System.out.println("Pokemon Town School has earned " + Pokemon_Town_School.getTotalMoneyEarned() + "$");
 
+        Charmander.payFees(10000);
+        System.out.println("Pokemon Town School has earned " + Pokemon_Town_School.getTotalMoneyEarned() + "$");
+
+        System.out.println("-------Making School pay Salary---------");
+        
+        Ash.receiveSalary(Ash.getSalary());
+        System.out.println("PTS has spent for salary to " + Ash.getName() + " and now has $" + Pokemon_Town_School.getTotalMoneyEarned());
+
+        Brock.receiveSalary(Brock.getSalary());
+        System.out.println("PTS has spent for salary to " + Ash.getName() + " and now has $" + Pokemon_Town_School.getTotalMoneyEarned());
 
 
     }
