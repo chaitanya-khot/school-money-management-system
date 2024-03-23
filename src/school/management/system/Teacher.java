@@ -68,4 +68,9 @@ public class Teacher {
 
     }
 
+    @Override
+    public String toString() {
+        return "Name of the teacher : " + name +
+                "\nTotal salary earned so far : $" + salaryEarned;
+    }
 }

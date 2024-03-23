@@ -118,4 +118,12 @@ public class Student {
         return feesTotal - feesPaid;
 
     }
+
+    // shortcut ctrl + O the below thing represents an object.
+    // We override the two string method
+    @Override
+    public String toString() {
+        return "Student's name : " + name +
+                "\nTotal fees paid so far : $" + feesPaid;
+    }
 }

@@ -40,13 +40,23 @@ public class Main {
         System.out.println("Pokemon Town School has earned " + Pokemon_Town_School.getTotalMoneyEarned() + "$");
 
         System.out.println("-------Making School pay Salary---------");
-        
+
         Ash.receiveSalary(Ash.getSalary());
         System.out.println("PTS has spent for salary to " + Ash.getName() + " and now has $" + Pokemon_Town_School.getTotalMoneyEarned());
 
         Brock.receiveSalary(Brock.getSalary());
-        System.out.println("PTS has spent for salary to " + Ash.getName() + " and now has $" + Pokemon_Town_School.getTotalMoneyEarned());
+        System.out.println("PTS has spent for salary to " + Brock.getName() + " and now has $" + Pokemon_Town_School.getTotalMoneyEarned());
 
+
+        //Override method or else just junk is printed when you execute the following line.
+        // The junk value is usually the memory location of the object (Irrelevant)
+        System.out.println(Pikachu);
+
+        System.out.println(Ash);
+
+        // Paying Misty her wages
+        Misty.receiveSalary(Misty.getSalary());
+        System.out.println(Misty);
 
     }
 }
