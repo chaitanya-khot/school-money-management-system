@@ -31,6 +31,16 @@ public class Main {
 
 
         School Pokemon_Town_School = new School(teacherList, studentList);
+        Teacher Oak = new Teacher(6, "Professor Oak", 1000);
+        Pokemon_Town_School.addTeacher(Oak);
+
+        // Printing list of all teacher names
+        System.out.println("List of all teacher names:");
+        for (Teacher teacher : teacherList) {
+            System.out.println(teacher.getName());
+        }
+
+
         System.out.println("Pokemon Town School has earned " + Pokemon_Town_School.getTotalMoneyEarned() + "$");
 
         Pikachu.payFees(5000);

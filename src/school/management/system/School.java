@@ -14,7 +14,7 @@ public class School {
 
     private List<Teacher> teachers;
     private List<Student> students;
-    // with static, we can access the method. Otherwise we need an instance of that method
+    // with static, we can access the method. Otherwise, we need an instance of that method
     private static int totalMoneyEarned;
     private static int totalMoneySpent;
 
@@ -43,7 +43,6 @@ public class School {
 
     /**
      * add teacher to the school (list)
-     * @param teacher the teacher to be added.
      */
 
     public void addTeacher(Teacher teacher) {
